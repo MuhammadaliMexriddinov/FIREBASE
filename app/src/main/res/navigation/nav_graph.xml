@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginScreen">
+
+    <fragment
+        android:id="@+id/loginScreen"
+        tools:layout="@layout/login_screen"
+        android:name="uz.alphadroid.petchat.ui.screens.login.LoginScreen"
+        android:label="LoginScreen" >
+        <action
+            android:id="@+id/action_loginScreen_to_verifyScreen"
+            app:destination="@id/verifyScreen" />
+        <action
+            android:id="@+id/action_loginScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/verify_screen"
+        android:id="@+id/verifyScreen"
+        android:name="uz.alphadroid.petchat.ui.screens.verify.VerifyScreen"
+        android:label="VerifyScreen" >
+        <action
+            android:id="@+id/action_verifyScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/home_screen"
+        android:id="@+id/homeScreen"
+        android:name="uz.alphadroid.petchat.ui.screens.home.HomeScreen"
+        android:label="HomeScreen" />
+</navigation>

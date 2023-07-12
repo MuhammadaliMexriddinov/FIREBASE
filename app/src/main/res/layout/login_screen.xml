@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/abel"
+        android:text="Kirish"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/abel"
+        android:text="Telefon"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.vicmikhailau.maskededittext.MaskedEditText
+        android:id="@+id/phoneEditTxt"
+        android:layout_width="328dp"
+        android:inputType="phone"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/login_edit_text_bg"
+        android:hint="+998 ## ### ## ##"
+        android:paddingStart="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:mask="+998 ## ### ## ##" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+
+        android:fontFamily="@font/abel"
+        android:text="Name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/phoneEditTxt"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEditTxt" />
+
+    <EditText
+        android:id="@+id/nameTxt"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/login_edit_text_bg"
+        android:paddingStart="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:passwordToggleEnabled="true" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:enabled="false"
+        android:layout_width="0dp"
+
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="27dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/abel"
+        android:text="Kirish"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/google_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+        app:layout_constraintEnd_toStartOf="@+id/facebook_btn"
+        app:layout_constraintStart_toStartOf="@+id/nameTxt"
+        app:layout_constraintTop_toBottomOf="@+id/nameTxt"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/facebook_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/img_1"
+        app:layout_constraintBottom_toBottomOf="@+id/google_btn"
+        app:layout_constraintEnd_toEndOf="@+id/nameTxt"
+        app:layout_constraintStart_toStartOf="@+id/nameTxt"
+        app:layout_constraintTop_toTopOf="@+id/google_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/twitter_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/img_2"
+        app:layout_constraintBottom_toBottomOf="@+id/facebook_btn"
+        app:layout_constraintEnd_toEndOf="@+id/nameTxt"
+        app:layout_constraintStart_toEndOf="@+id/facebook_btn"
+        app:layout_constraintTop_toTopOf="@+id/facebook_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

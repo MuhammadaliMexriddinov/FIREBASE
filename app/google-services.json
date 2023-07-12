@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "245501848840",
+    "project_id": "petchat-4872c",
+    "storage_bucket": "petchat-4872c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245501848840:android:5ced066bccc62bb18090bd",
+        "android_client_info": {
+          "package_name": "uz.alphadroid.petchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245501848840-sp7ng8j4q5larse9v1kkue07ll69fdrb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uz.alphadroid.petchat",
+            "certificate_hash": "450620b8753328f39851a2cf51691a51b4d4c03f"
+          }
+        },
+        {
+          "client_id": "245501848840-84j47ocgd8a2pl1gqio2266vf592ndg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2IQpM28f6tDvPc6XdjLFH3J25j5_UG0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245501848840-84j47ocgd8a2pl1gqio2266vf592ndg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
